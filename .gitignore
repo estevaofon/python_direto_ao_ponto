@@ -1,0 +1,6 @@
+env/
+myenv/
+*.py[cod]
+__pycache__/
+*.pdf
+pdf/
