@@ -6,7 +6,9 @@ class App():
     def __init__(self, toplevel):
         self.raiz = toplevel
         self.raiz.title('AquaPython App')
+        # define tamanho da janela
         self.raiz.geometry("300x300")
+        # impede redimensionar a janela
         self.raiz.resizable(False, False)
         self.create_widgets()
 
