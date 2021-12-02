@@ -23,7 +23,6 @@ class App():
         """
         cp = consumo per capita
         n = numero de pessoas
-        dia_suprir = dias a suprir
         """
         cp = float(self.consumo_entry.get())
         n = int(self.n_pessoas_entry.get())
@@ -49,13 +48,13 @@ class App():
         # Consumo
         self.consumo_label = tk.Label(self.frame2, text="Consumo per capita (L/dia):")
         self.consumo_label.pack(side=tk.LEFT)
-        self.consumo_entry = tk.Entry(self.frame2, width=10)
+        self.consumo_entry = tk.Entry(self.frame2, width=11)
         self.consumo_entry.pack(side=tk.RIGHT)
 
         # Numero de pessoas
         self.n_pessoas_label = tk.Label(self.frame3, text="Nº de pessoas:")
         self.n_pessoas_label.pack(side=tk.LEFT)
-        self.n_pessoas_entry = tk.Entry(self.frame3, width=10)
+        self.n_pessoas_entry = tk.Entry(self.frame3, width=11)
         self.n_pessoas_entry.pack(side=tk.RIGHT)
 
         # login button
