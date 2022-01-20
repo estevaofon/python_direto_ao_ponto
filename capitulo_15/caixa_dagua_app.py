@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 from tkinter import messagebox
 from PIL import ImageTk,Image
 
@@ -44,23 +45,23 @@ class App():
         self.frame4.pack(fill=tk.BOTH, padx=10, pady=5)
 
         self.img = ImageTk.PhotoImage(Image.open("caixa_3d.png"))
-        self.panel = tk.Label(self.frame1, image = self.img)
+        self.panel = ttk.Label(self.frame1, image = self.img)
         self.panel.pack(side=tk.LEFT)
         
         # Consumo
-        self.consumo_label = tk.Label(self.frame2, text="Consumo per capita (L/dia):")
+        self.consumo_label = ttk.Label(self.frame2, text="Consumo per capita (L/dia):")
         self.consumo_label.pack(side=tk.LEFT)
-        self.consumo_entry = tk.Entry(self.frame2, width=11)
+        self.consumo_entry = ttk.Entry(self.frame2, width=11)
         self.consumo_entry.pack(side=tk.RIGHT)
 
         # Numero de pessoas
-        self.n_pessoas_label = tk.Label(self.frame3, text="Nº de pessoas:")
+        self.n_pessoas_label = ttk.Label(self.frame3, text="Nº de pessoas:")
         self.n_pessoas_label.pack(side=tk.LEFT)
-        self.n_pessoas_entry = tk.Entry(self.frame3, width=11)
+        self.n_pessoas_entry = ttk.Entry(self.frame3, width=11)
         self.n_pessoas_entry.pack(side=tk.RIGHT)
 
         # login button
-        button = tk.Button(self.frame4, text="Calcular", command=self.volume_necessario)
+        button = ttk.Button(self.frame4, text="Calcular", command=self.volume_necessario)
         button.pack(side=tk.RIGHT)
 
 raiz = tk.Tk()
